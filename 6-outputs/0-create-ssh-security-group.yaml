@@ -27,5 +27,8 @@ Outputs:
   StackSSHSecurityGroup:
     Description: The SSH Security Group for our Company
     Value: !Ref MyCompanyWideSSHSecurityGroup
+    #need the export line to use with other stacks.
     Export:
       Name: SSHSecurityGroup
+#this will allow you to reference the SSHSecurityGroup in other stack creations
+#check 1-reference-ssh-security-group.yaml

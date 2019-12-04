@@ -2,4 +2,8 @@
 Resources:
   MyS3Bucket:
     Type: "AWS::S3::Bucket"
-    Properties: {}
+    Properties: {
+      AccessControl: Publicread
+      BucketName: cloudformations3temp
+      }
+#cloudformation does not back-up data in s3. If you have to replace s3, all the data will be gone.

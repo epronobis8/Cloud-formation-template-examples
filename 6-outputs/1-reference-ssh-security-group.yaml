@@ -9,3 +9,5 @@ Resources:
       SecurityGroups:
         # we reference the output here, using the Fn::ImportValue function
         - !ImportValue SSHSecurityGroup
+#this was created in the 0-create-ssh-security-group.yaml file.
+#It was exported so it can be used in other stacks.
